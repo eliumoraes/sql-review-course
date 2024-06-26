@@ -1,108 +1,108 @@
-##  Meu Bootcamp SQL: Conquistando a Baires Dev! 
+##  My SQL Bootcamp: Conquering Baires Dev! 
 
-Olá! Seja bem-vindo(a) ao meu repositório de estudos para o teste de SQL da Baires Dev. Aqui, você vai acompanhar minha jornada de revisão e domínio do SQL, desde os conceitos básicos até as técnicas mais avançadas.
+Hello! Welcome to my study repository for the Baires Dev SQL test. Here, you'll follow my journey of reviewing and mastering SQL, from basic concepts to advanced techniques.
 
-###  O Que Você Vai Encontrar:
+###  What You'll Find:
 
-*   **Anotações Detalhadas:** Explicações claras e exemplos práticos para cada tópico.
-*   **Exercícios Desafiadores:** Coloque seus conhecimentos à prova e consolide seu aprendizado.
-*   **Projetos Reais:** Aplique o SQL em cenários do mundo real e construa seu portfólio.
-*   **Dicas e Truques:** Descubra macetes e atalhos para otimizar suas consultas.
-*   **Meu Progresso:** Acompanhe minha evolução a cada commit e veja como estou me preparando.
+*   **Detailed Notes:** Clear explanations and practical examples for each topic.
+*   **Challenging Exercises:** Put your knowledge to the test and solidify your learning.
+*   **Real-World Projects:** Apply SQL to real-world scenarios and build your portfolio.
+*   **Tips and Tricks:** Discover hacks and shortcuts to optimize your queries.
+*   **My Progress:** Follow my evolution with each commit and see how I'm preparing.
 
-###  Como o Curso Está Organizado:
+###  How the Course is Organized:
 
-O curso está dividido em 4 módulos:
+The course is divided into 4 modules:
 
-1.  **Fundamentos do SQL (Básico):** Os pilares essenciais para construir consultas sólidas.
-2.  **SQL Intermediário:** Técnicas para lidar com dados complexos e gerar insights valiosos.
-3.  **SQL Avançado:** Ferramentas poderosas para otimizar consultas e resolver problemas desafiadores.
-4.  **Projetos Práticos:** Aplique seus conhecimentos em projetos completos e mostre suas habilidades.
+1.  **SQL Fundamentals (Basic):** The essential pillars for building solid queries.
+2.  **Intermediate SQL:** Techniques for handling complex data and generating valuable insights.
+3.  **Advanced SQL:** Powerful tools for optimizing queries and solving challenging problems.
+4.  **Practical Projects:** Apply your knowledge to complete projects and showcase your skills.
 
-###  Ferramentas que Estou Usando:
+###  Tools I'm Using:
 
-*   **SGBD:** PostgreSQL (você pode usar o MySQL também, se preferir)
-*   **Ubuntu:** Meu sistema operacional de confiança para codar e aprender.
-*   **psql:** O cliente de linha de comando do PostgreSQL, meu companheiro inseparável.
-*   **VSCode:** Meu editor de código favorito, com extensões que facilitam minha vida.
+*   **DBMS:** PostgreSQL (you can use MySQL as well, if you prefer)
+*   **Ubuntu:** My trusted operating system for coding and learning.
+*   **psql:** The PostgreSQL command-line client, my inseparable companion.
+*   **VSCode:** My favorite code editor, with extensions that make my life easier.
 
-###  Junte-se a Mim Nessa Jornada!
+###  Join Me on This Journey!
 
-Sinta-se à vontade para explorar meu repositório, usar minhas anotações e exercícios, e até mesmo contribuir com suas próprias ideias e soluções. Vamos aprender e crescer juntos!
+Feel free to explore my repository, use my notes and exercises, and even contribute your own ideas and solutions. Let's learn and grow together!
 
-**Dica:** Se você quiser acompanhar meu progresso em tempo real, ative as notificações deste repositório. Assim, você será avisado sempre que eu fizer um novo commit.
+**Tip:** If you want to follow my progress in real time, enable notifications for this repository. That way, you'll be notified whenever I make a new commit. 
 
-## Sumário do Curso:
+## Course Outline:
 
-**I. Fundamentos do SQL (Básico)**
+**I. SQL Fundamentals (Basic)**
 
-a. Introdução ao SQL e Bancos de Dados Relacionais:
-    1. O que é SQL e seus usos
-    2. Modelo relacional e conceitos-chave (tabelas, colunas, linhas)
-    3. Instalação e configuração de um SGBD (ex: PostgreSQL, MySQL) no Ubuntu
-    4. Ferramentas de linha de comando e clientes SQL (ex: psql, mysql)
-b. Consultas Básicas (SELECT, FROM, WHERE):
-    1. Sintaxe básica do SELECT
-    2. Cláusulas FROM e WHERE para filtrar dados
-    3. Operadores lógicos (AND, OR, NOT) e de comparação
-    4. Ordenação de resultados (ORDER BY)
-    5. Limitação de resultados (LIMIT, OFFSET)
-    6. Exercícios práticos com consultas simples
-c. Manipulação de Dados (INSERT, UPDATE, DELETE):
-    1. Inserção de novas linhas em tabelas (INSERT)
-    2. Atualização de valores existentes (UPDATE)
-    3. Remoção de linhas (DELETE)
-    4. Boas práticas e cuidados ao manipular dados
-    5. Exercícios práticos de manipulação de dados
-d. Funções Agregadas e Agrupamento (GROUP BY, HAVING):
-    1. Funções como COUNT, SUM, AVG, MIN, MAX
-    2. Agrupamento de dados por colunas (GROUP BY)
-    3. Filtragem de grupos (HAVING)
-    4. Exercícios práticos com funções agregadas e agrupamento
+a. Introduction to SQL and Relational Databases:
+   1. What is SQL and its uses
+   2. Relational model and key concepts (tables, columns, rows)
+   3. Installing and configuring a DBMS (e.g., PostgreSQL, MySQL) on Ubuntu
+   4. Command-line tools and SQL clients (e.g., psql, mysql)
+b. Basic Queries (SELECT, FROM, WHERE):
+   1. Basic SELECT syntax
+   2. FROM and WHERE clauses for filtering data
+   3. Logical operators (AND, OR, NOT) and comparison operators
+   4. Ordering results (ORDER BY)
+   5. Limiting results (LIMIT, OFFSET)
+   6. Practical exercises with simple queries
+c. Data Manipulation (INSERT, UPDATE, DELETE):
+   1. Inserting new rows into tables (INSERT)
+   2. Updating existing values (UPDATE)
+   3. Deleting rows (DELETE)
+   4. Best practices and precautions when handling data
+   5. Practical exercises with data manipulation
+d. Aggregate Functions and Grouping (GROUP BY, HAVING):
+   1. Functions like COUNT, SUM, AVG, MIN, MAX
+   2. Grouping data by columns (GROUP BY)
+   3. Filtering groups (HAVING)
+   4. Practical exercises with aggregate functions and grouping
 
-**II. SQL Intermediário**
+**II. Intermediate SQL**
 
-a. Junções (JOIN):
-    1. Tipos de junções (INNER, LEFT, RIGHT, FULL)
-    2. Sintaxe e exemplos de junções
-    3. Junções em múltiplas tabelas
-    4. Exercícios práticos com diferentes tipos de junções
-b. Subconsultas:
-    1. O que são subconsultas e quando usá-las
-    2. Subconsultas como filtros (WHERE) e como tabelas (FROM)
-    3. Subconsultas correlacionadas
-    4. Exercícios práticos com subconsultas
-c. Visões (VIEWS):
-    1. Criação e uso de visões
-    2. Vantagens e desvantagens das visões
-    3. Atualização de dados através de visões (se aplicável)
-    4. Exercícios práticos com criação e uso de visões
+a. Joins (JOIN):
+   1. Types of joins (INNER, LEFT, RIGHT, FULL)
+   2. Syntax and examples of joins
+   3. Joins on multiple tables
+   4. Practical exercises with different types of joins
+b. Subqueries:
+   1. What are subqueries and when to use them
+   2. Subqueries as filters (WHERE) and as tables (FROM)
+   3. Correlated subqueries
+   4. Practical exercises with subqueries
+c. Views (VIEWS):
+   1. Creating and using views
+   2. Advantages and disadvantages of views
+   3. Updating data through views (if applicable)
+   4. Practical exercises with creating and using views
 
-**III. SQL Avançado**
+**III. Advanced SQL**
 
-a. Funções de Janela:
-    1. Conceito e exemplos de funções de janela (RANK, ROW_NUMBER, etc.)
-    2. Cláusula OVER e PARTITION BY
-    3. Uso de funções de janela em análise de dados
-    4. Exercícios práticos com funções de janela
-b. Otimização de Consultas:
-    1. Fatores que afetam o desempenho de consultas
-    2. Uso de índices para melhorar a performance
-    3. Planos de execução e análise de consultas
-    4. Dicas e truques para otimização
-c. Outros Tópicos:
-    1. Expressões regulares (REGEX) em SQL
-    2. Transações (COMMIT, ROLLBACK)
-    3. Stored procedures e functions (se aplicável ao SGBD)
-    4. Triggers (se aplicável ao SGBD)
+a. Window Functions:
+   1. Concept and examples of window functions (RANK, ROW_NUMBER, etc.)
+   2. OVER and PARTITION BY clauses
+   3. Using window functions in data analysis
+   4. Practical exercises with window functions
+b. Query Optimization:
+   1. Factors affecting query performance
+   2. Using indexes to improve performance
+   3. Execution plans and query analysis
+   4. Tips and tricks for optimization
+c. Other Topics:
+   1. Regular expressions (REGEX) in SQL
+   2. Transactions (COMMIT, ROLLBACK)
+   3. Stored procedures and functions (if applicable to the DBMS)
+   4. Triggers (if applicable to the DBMS)
 
-**IV. Projetos Práticos**
+**IV. Practical Projects**
 
-a. Modelagem de dados:
-    1. Criação de um modelo de dados para um cenário específico
-    2. Definição de tabelas, colunas e relacionamentos
-b. Consultas complexas:
-    1. Desenvolvimento de consultas que envolvem múltiplas tabelas, junções, subconsultas e funções
-c. Análise de dados:
-    1. Uso de SQL para extrair insights de um conjunto de dados
-    2. Geração de relatórios e visualizações
+a. Data Modeling:
+   1. Creating a data model for a specific scenario
+   2. Defining tables, columns, and relationships
+b. Complex Queries:
+   1. Developing queries that involve multiple tables, joins, subqueries, and functions
+c. Data Analysis:
+   1. Using SQL to extract insights from a dataset
+   2. Generating reports and visualizations
