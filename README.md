@@ -30,80 +30,79 @@ O curso está dividido em 4 módulos:
 
 Sinta-se à vontade para explorar meu repositório, usar minhas anotações e exercícios, e até mesmo contribuir com suas próprias ideias e soluções. Vamos aprender e crescer juntos!
 
-**Dica:** Se você quiser acompanhar meu progresso em tempo real, ative as notificações deste repositório. Assim, você será avisado sempre que eu fizer um novo commit. 
+**Dica:** Se você quiser acompanhar meu progresso em tempo real, ative as notificações deste repositório. Assim, você será avisado sempre que eu fizer um novo commit.
 
-### Sumário completo:
+## Sumário do Curso:
 
-Sumário do Curso:
+**I. Fundamentos do SQL (Básico)**
 
-I. Fundamentos do SQL (Básico)
+a. Introdução ao SQL e Bancos de Dados Relacionais:
+    1. O que é SQL e seus usos
+    2. Modelo relacional e conceitos-chave (tabelas, colunas, linhas)
+    3. Instalação e configuração de um SGBD (ex: PostgreSQL, MySQL) no Ubuntu
+    4. Ferramentas de linha de comando e clientes SQL (ex: psql, mysql)
+b. Consultas Básicas (SELECT, FROM, WHERE):
+    1. Sintaxe básica do SELECT
+    2. Cláusulas FROM e WHERE para filtrar dados
+    3. Operadores lógicos (AND, OR, NOT) e de comparação
+    4. Ordenação de resultados (ORDER BY)
+    5. Limitação de resultados (LIMIT, OFFSET)
+    6. Exercícios práticos com consultas simples
+c. Manipulação de Dados (INSERT, UPDATE, DELETE):
+    1. Inserção de novas linhas em tabelas (INSERT)
+    2. Atualização de valores existentes (UPDATE)
+    3. Remoção de linhas (DELETE)
+    4. Boas práticas e cuidados ao manipular dados
+    5. Exercícios práticos de manipulação de dados
+d. Funções Agregadas e Agrupamento (GROUP BY, HAVING):
+    1. Funções como COUNT, SUM, AVG, MIN, MAX
+    2. Agrupamento de dados por colunas (GROUP BY)
+    3. Filtragem de grupos (HAVING)
+    4. Exercícios práticos com funções agregadas e agrupamento
 
-Introdução ao SQL e Bancos de Dados Relacionais:
-O que é SQL e seus usos
-Modelo relacional e conceitos-chave (tabelas, colunas, linhas)
-Instalação e configuração de um SGBD (ex: PostgreSQL, MySQL) no Ubuntu
-Ferramentas de linha de comando e clientes SQL (ex: psql, mysql)
-Consultas Básicas (SELECT, FROM, WHERE):
-Sintaxe básica do SELECT
-Cláusulas FROM e WHERE para filtrar dados
-Operadores lógicos (AND, OR, NOT) e de comparação
-Ordenação de resultados (ORDER BY)
-Limitação de resultados (LIMIT, OFFSET)
-Exercícios práticos com consultas simples
-Manipulação de Dados (INSERT, UPDATE, DELETE):
-Inserção de novas linhas em tabelas (INSERT)
-Atualização de valores existentes (UPDATE)
-Remoção de linhas (DELETE)
-Boas práticas e cuidados ao manipular dados
-Exercícios práticos de manipulação de dados
-Funções Agregadas e Agrupamento (GROUP BY, HAVING):
-Funções como COUNT, SUM, AVG, MIN, MAX
-Agrupamento de dados por colunas (GROUP BY)
-Filtragem de grupos (HAVING)
-Exercícios práticos com funções agregadas e agrupamento
+**II. SQL Intermediário**
 
-II. SQL Intermediário
+a. Junções (JOIN):
+    1. Tipos de junções (INNER, LEFT, RIGHT, FULL)
+    2. Sintaxe e exemplos de junções
+    3. Junções em múltiplas tabelas
+    4. Exercícios práticos com diferentes tipos de junções
+b. Subconsultas:
+    1. O que são subconsultas e quando usá-las
+    2. Subconsultas como filtros (WHERE) e como tabelas (FROM)
+    3. Subconsultas correlacionadas
+    4. Exercícios práticos com subconsultas
+c. Visões (VIEWS):
+    1. Criação e uso de visões
+    2. Vantagens e desvantagens das visões
+    3. Atualização de dados através de visões (se aplicável)
+    4. Exercícios práticos com criação e uso de visões
 
-Junções (JOIN):
-Tipos de junções (INNER, LEFT, RIGHT, FULL)
-Sintaxe e exemplos de junções
-Junções em múltiplas tabelas
-Exercícios práticos com diferentes tipos de junções
-Subconsultas:
-O que são subconsultas e quando usá-las
-Subconsultas como filtros (WHERE) e como tabelas (FROM)
-Subconsultas correlacionadas
-Exercícios práticos com subconsultas
-Visões (VIEWS):
-Criação e uso de visões
-Vantagens e desvantagens das visões
-Atualização de dados através de visões (se aplicável)
-Exercícios práticos com criação e uso de visões
+**III. SQL Avançado**
 
-III. SQL Avançado
+a. Funções de Janela:
+    1. Conceito e exemplos de funções de janela (RANK, ROW_NUMBER, etc.)
+    2. Cláusula OVER e PARTITION BY
+    3. Uso de funções de janela em análise de dados
+    4. Exercícios práticos com funções de janela
+b. Otimização de Consultas:
+    1. Fatores que afetam o desempenho de consultas
+    2. Uso de índices para melhorar a performance
+    3. Planos de execução e análise de consultas
+    4. Dicas e truques para otimização
+c. Outros Tópicos:
+    1. Expressões regulares (REGEX) em SQL
+    2. Transações (COMMIT, ROLLBACK)
+    3. Stored procedures e functions (se aplicável ao SGBD)
+    4. Triggers (se aplicável ao SGBD)
 
-Funções de Janela:
-Conceito e exemplos de funções de janela (RANK, ROW_NUMBER, etc.)
-Cláusula OVER e PARTITION BY
-Uso de funções de janela em análise de dados
-Exercícios práticos com funções de janela
-Otimização de Consultas:
-Fatores que afetam o desempenho de consultas
-Uso de índices para melhorar a performance
-Planos de execução e análise de consultas
-Dicas e truques para otimização
-Outros Tópicos:
-Expressões regulares (REGEX) em SQL
-Transações (COMMIT, ROLLBACK)
-Stored procedures e functions (se aplicável ao SGBD)
-Triggers (se aplicável ao SGBD)
-IV. Projetos Práticos
+**IV. Projetos Práticos**
 
-Modelagem de dados:
-Criação de um modelo de dados para um cenário específico
-Definição de tabelas, colunas e relacionamentos
-Consultas complexas:
-Desenvolvimento de consultas que envolvem múltiplas tabelas, junções, subconsultas e funções
-Análise de dados:
-Uso de SQL para extrair insights de um conjunto de dados
-Geração de relatórios e visualizações
+a. Modelagem de dados:
+    1. Criação de um modelo de dados para um cenário específico
+    2. Definição de tabelas, colunas e relacionamentos
+b. Consultas complexas:
+    1. Desenvolvimento de consultas que envolvem múltiplas tabelas, junções, subconsultas e funções
+c. Análise de dados:
+    1. Uso de SQL para extrair insights de um conjunto de dados
+    2. Geração de relatórios e visualizações
