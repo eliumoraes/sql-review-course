@@ -152,3 +152,24 @@ Search for "SQLTools PostgreSQL/Cockroach Driver" and install the extension by M
 You should now see your database listed in the SQLTools sidebar. You can start writing SQL queries in a new file and execute them against your database.
 
 4. Command-line tools and SQL clients (e.g., psql, mysql)
+Alright, let's talk about the tools I'll be using to interact with my PostgreSQL database. This is like having different ways to talk to my data, each with its own strengths.
+
+**psql:** My SQL Command Center
+psql is the built-in tool that comes with PostgreSQL. It's like a direct line to my database, where I can type SQL commands and get instant feedback.
+
+How to use it:
+1. Open the terminal.
+2. Type `psql`if (using the default user and no specific database) or `psql -U my_username -d my_database_name`(if I created a user and database).
+3. Start typing SQL commands!
+	- `\l` to see all my databases ("l" comes from "list").
+	- `\dt`to see all the tables in the current database (think "dt" for "display tables").
+	- Up/Down arrows to scroll through my command history (like in a web browser).
+	- `\h`for help
+	- `\q`to quit.
+
+**Other Options: pgAdmin and DBeaver**
+There are like visual dashboards for my database. They're great for more complex tasks, but I'll probably stick to `psql`for quick queries and simple tasks. It's faster and more efficient for those.
+
+**Remember:**
+- `psql` is my go-to for quick commands and scripts.
+- GUIs like pgAdmin and DBeaver are better for complex database management or when someone non-familiar with terminal interfaces has to navigate trough queries.
