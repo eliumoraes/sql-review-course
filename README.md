@@ -41,6 +41,7 @@ a. Introduction to SQL and Relational Databases:
    2. Relational model and key concepts (tables, columns, rows)
    3. Installing and configuring a DBMS (e.g., PostgreSQL, MySQL) on Ubuntu
    4. Command-line tools and SQL clients (e.g., psql, mysql)
+
 b. Basic Queries (SELECT, FROM, WHERE):
    1. Basic SELECT syntax
    2. FROM and WHERE clauses for filtering data
@@ -48,12 +49,14 @@ b. Basic Queries (SELECT, FROM, WHERE):
    4. Ordering results (ORDER BY)
    5. Limiting results (LIMIT, OFFSET)
    6. Practical exercises with simple queries
+
 c. Data Manipulation (INSERT, UPDATE, DELETE):
    1. Inserting new rows into tables (INSERT)
    2. Updating existing values (UPDATE)
    3. Deleting rows (DELETE)
    4. Best practices and precautions when handling data
    5. Practical exercises with data manipulation
+
 d. Aggregate Functions and Grouping (GROUP BY, HAVING):
    1. Functions like COUNT, SUM, AVG, MIN, MAX
    2. Grouping data by columns (GROUP BY)
@@ -67,11 +70,13 @@ a. Joins (JOIN):
    2. Syntax and examples of joins
    3. Joins on multiple tables
    4. Practical exercises with different types of joins
+
 b. Subqueries:
    1. What are subqueries and when to use them
    2. Subqueries as filters (WHERE) and as tables (FROM)
    3. Correlated subqueries
    4. Practical exercises with subqueries
+
 c. Views (VIEWS):
    1. Creating and using views
    2. Advantages and disadvantages of views
@@ -85,11 +90,13 @@ a. Window Functions:
    2. OVER and PARTITION BY clauses
    3. Using window functions in data analysis
    4. Practical exercises with window functions
+
 b. Query Optimization:
    1. Factors affecting query performance
    2. Using indexes to improve performance
    3. Execution plans and query analysis
    4. Tips and tricks for optimization
+
 c. Other Topics:
    1. Regular expressions (REGEX) in SQL
    2. Transactions (COMMIT, ROLLBACK)
@@ -101,8 +108,10 @@ c. Other Topics:
 a. Data Modeling:
    1. Creating a data model for a specific scenario
    2. Defining tables, columns, and relationships
+
 b. Complex Queries:
    1. Developing queries that involve multiple tables, joins, subqueries, and functions
+
 c. Data Analysis:
    1. Using SQL to extract insights from a dataset
    2. Generating reports and visualizations
