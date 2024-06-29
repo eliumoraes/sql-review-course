@@ -25,3 +25,14 @@ VALUES ('David', 'Lee', 'HR');
 The `INSERT INTO` statement adds a new row to a table, specifying the values for the columns you want to insert.
 **Remember:** The order of values must match the order of columns in the `INSERT` statement.
 
+### Inserting Multiple Rows
+You can insert multiple rows into a table with a `INSERT` statement. This is especially useful when you have a batch of data to add. Here's how:
+```
+INSERT INTO employees (first_name, last_name, department)
+VALUES
+	('David', 'Lee', 'HR'),
+	('Emily', 'Chen', 'Marketing'),
+	('Michael', 'Brown', 'Sales');
+```
+**Interview-Ready Explanation:**
+To insert multiple rows in a single query, you just need to separate the value sets with commas, as shown in the example above.
