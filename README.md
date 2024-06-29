@@ -45,10 +45,8 @@ a. Introduction to SQL and Relational Databases:
 b. Basic Queries (SELECT, FROM, WHERE):
    1. Basic SELECT syntax
    2. FROM and WHERE clauses for filtering data
-   3. Logical operators (AND, OR, NOT) and comparison operators
-   4. Ordering results (ORDER BY)
-   5. Limiting results (LIMIT, OFFSET)
-   6. Practical exercises with simple queries
+   3. Other operators and filtering techniques (BETWEEN, IN, LIKE, IS NULL)
+   4. Sorting and limiting results (ORDER BY, LIMIT, OFFSET)
 
 c. Data Manipulation (INSERT, UPDATE, DELETE):
    1. Inserting new rows into tables (INSERT)
