@@ -47,7 +47,7 @@ Here's what's happening:
 	- `UNIQUE` means each customer must have a different email.
 	- Again, it's `NOT NULL` because it's required information.
 
-### Result:
+#### Result:
 ```
 my_first_database=# CREATE TABLE customers (
 my_first_database(# customer_id SERIAL PRIMARY KEY,
@@ -65,7 +65,7 @@ my_first_database=# \dt
 ```
 Once the table is created the psql command line interface will prompt a `CREATE TABLE` result. That means the table was created accordingly. Right after, I verified the table creation by typing `\dt` to list all the tables. If I want even more information I can just type `\dt+`, this is an extended version of `\dt` that provides additional information about the tables, such as the schema, name, type, owner, and more.
 
-## Permissions
+#### Permissions
 I created the first table using psql, but the next one I want to create using the SQLTools extension. When you create tables or other objects in PostgreSQL using the `psql` CLI logged in as the `postgres` superuser, those objects are owned by the `postgres` user by default. Therefore, if you want to access those objects from SQLTools using the `admin` user, you need to explicitly grant privileges to the `admin` user.
 
 Here's the command you can use in the `psql` CLI to grant the `admin` user access to the tables in your database:
@@ -98,3 +98,38 @@ Here's the breakdown:
 **Note:** If you decide to run the SQL command to create the table from SQLTools extension, make sure to click on the "play button" followed by the "Run on active connection" text to execute it.
 
 **NB:** You'll need to click on the "refresh" (🔄) icon within the SQLTools extension to see the new table in the list.
+
+### Populating the `customers` Table with Data
+Now that I have my tables set up, it's time to add some customers! I'll use the `INSERT INTO` statement to insert multiple rows at once:
+```
+INSERT INTO customers (first_name, last_name, email)
+VALUES
+	('Alice', 'Johnson', 'alice.johnson@example.com'),
+	('Bob', 'Smith', 'bob.smith@example.com'),
+	('Charlie', 'Brown', 'charlie.brown@example.com');
+```
+**Hold on!**  When I tried to run this in the SQLTools extension, I got a "permission denied" error. It turns out that since I created the `customers` table as the `postgres` user, I need to grante the `admin` user (who I'm using in SQLTools) permission to use the sequence that generates the `customer_id` values.
+```
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO admin;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO admin;
+```
+#### Result:
+```
+sql-review-course$ sudo -i -u postgres
+[sudo] password for eliu: 
+postgres@eliu-Latitude-3490:~$ psql
+psql (14.12 (Ubuntu 14.12-0ubuntu0.22.04.1))
+Type "help" for help.
+
+postgres=# \c my_first_database
+You are now connected to database "my_first_database" as user "postgres".
+my_first_database=# GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO admin;
+GRANT
+my_first_database=# GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA Public TO admin;
+GRANT
+```
+After granting these permissions in the `psql` CLI, everything worked smoothly!
+**Interview-Ready Explanation:**
+I used `INSERT INTO` to add three new customers to the `customers` table, providing values for their first name, last name, and email. If you run into permission issues, make sure to grant the necessary privileges on tables and sequences to the user you're connecting with.
+
+
