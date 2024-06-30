@@ -152,6 +152,10 @@ SELECT * FROM orders;
 ```
 This should display the data I just inserted.
 
+The following screenshot is an example of how the results will be displayed in the SQLTools extension when you run it. You have to click the tabs to switch between different results.
+
+![Image of SQLTools Results](images/i.c.5-001.png)
+
 **Interview-Ready Explanation:**
 I'm using `SELECT *` to retrieve all columns and rows from the `customers` and `orders` tables to verify that the data I inserted is present and correct.
 
