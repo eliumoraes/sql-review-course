@@ -63,7 +63,7 @@ my_first_database=# \dt
  public | customers | table | postgres
 (1 row)
 ```
-Once the table is created the psql command line interface will prompt a `CREATE TABLE` result. That means the table was created accordingly. Right after, I verified the table creation by typing `\dt` to list all the tables. If I want even more information I can just type `\dt+`, this is an extended version of `\dt` that provides additional information about the tables, such as the schema, name, type, owner, and more.
+Once the table is created the psql command line interface will prompt a `CREATE TABLE` message. That means the table was created accordingly. Right after, I verified the table creation by typing `\dt` to list all the tables. If I want even more information I can just type `\dt+`, this is an extended version of `\dt` that provides additional information about the tables, such as the schema, name, type, owner, and more.
 
 #### Permissions
 I created the first table using psql, but the next one I want to create using the SQLTools extension. When you create tables or other objects in PostgreSQL using the `psql` CLI logged in as the `postgres` superuser, those objects are owned by the `postgres` user by default. Therefore, if you want to access those objects from SQLTools using the `admin` user, you need to explicitly grant privileges to the `admin` user.
@@ -108,7 +108,7 @@ VALUES
 	('Bob', 'Smith', 'bob.smith@example.com'),
 	('Charlie', 'Brown', 'charlie.brown@example.com');
 ```
-**Hold on!**  When I tried to run this in the SQLTools extension, I got a "permission denied" error. It turns out that since I created the `customers` table as the `postgres` user, I need to grante the `admin` user (who I'm using in SQLTools) permission to use the sequence that generates the `customer_id` values.
+**Hold on!**  When I tried to run this in the SQLTools extension, I got a "permission denied" error. It turns out that since I created the `customers` table as the `postgres` user, I need to grant the `admin` user (who I'm using in SQLTools) permission to use the sequence that generates the `customer_id` values.
 ```
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO admin;
 GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO admin;
@@ -133,7 +133,7 @@ After granting these permissions in the `psql` CLI, everything worked smoothly!
 I used `INSERT INTO` to add three new customers to the `customers` table, providing values for their first name, last name, and email. If you run into permission issues, make sure to grant the necessary privileges on tables and sequences to the user you're connecting with.
 
 ### Populating the `orders` Table with Data
-Next, I'll add some order for these customers:
+Next, I'll add some orders for these customers:
 ```
 INSERT INTO orders (customer_id, order_date, total_amount)
 VALUES
