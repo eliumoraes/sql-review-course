@@ -132,4 +132,28 @@ After granting these permissions in the `psql` CLI, everything worked smoothly!
 **Interview-Ready Explanation:**
 I used `INSERT INTO` to add three new customers to the `customers` table, providing values for their first name, last name, and email. If you run into permission issues, make sure to grant the necessary privileges on tables and sequences to the user you're connecting with.
 
+### Populating the `orders` Table with Data
+Next, I'll add some order for these customers:
+```
+INSERT INTO orders (customer_id, order_date, total_amount)
+VALUES
+	(1, '2024-01-15', 125.50), -- Alice
+	(2, '2024-02-22', 89.99),  -- Bob
+	(1, '2024-03-10', 210.85); -- Alice again
+```
+**Interview-Ready Explanation:**
+I'm inserting three orders into the `orders` table, associating each order with a customer ID from the `customers` table, and providing the order date and total amount.
+
+### Verifying the Data
+Let's make sure everything got inserted correctly. I'll use a `SELECT` statement to view the data in both tables:
+```
+SELECT * FROM customers;
+SELECT * FROM orders;
+```
+This should display the data I just inserted.
+
+**Interview-Ready Explanation:**
+I'm using `SELECT *` to retrieve all columns and rows from the `customers` and `orders` tables to verify that the data I inserted is present and correct.
+
+Now that I have some data to work with, I'm ready to move on to the next exercise, where I'll practice updating and deleting data.
 
