@@ -161,3 +161,26 @@ I'm using `SELECT *` to retrieve all columns and rows from the `customers` and `
 
 Now that I have some data to work with, I'm ready to move on to the next exercise, where I'll practice updating and deleting data.
 
+### Updating and Deleting Data
+Alright, now that my `customers` and `orders` tables have some data, it's time for the real fun: updating and deleting!
+
+**Updating a Customer's Information:**
+Let's say Alice Johnson got married and changed her last name to Miller. Here's how I'd update her record:
+
+```
+UPDATE customers
+SET last_name = 'Miller'
+WHERE customer_id = 1; -- Assuming ALice's ID is 1
+```
+**Interview-Ready Explanation:**
+I used `UPDATE` to change the `last_name` column of the customer with `customer_id` 1 to 'Miller'.
+
+**Deleting an Order:**
+Suppose Bob Smith wants to cancel his order (order_id = 2). Here's how I'd delete it:
+```
+DELETE FROM orders
+WHERE order_id = 2;
+```
+**Interview-Ready Explanation:**
+I used `DELETE `to remove the order with order_id 2 from the `orders` table.
+
