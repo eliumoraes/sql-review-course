@@ -184,3 +184,25 @@ WHERE order_id = 2;
 **Interview-Ready Explanation:**
 I used `DELETE `to remove the order with order_id 2 from the `orders` table.
 
+**Important Note:** Remember to be careful when using `UPDATE` and `DELETE`! Always double-check your `WHERE` conditions before executing. If you're unsure, test your condition with a `SELECT`statement first.
+
+**Tip:** In interview, you might be asked to explain how to prevent accidental deletions or updates. Mentioning the importante of using `WHERE` clauses, backing up your database, and using transactions with rollback capabilities will demonstrate your understanding of data integrity.
+
+Now, let's explore some additional data manipulation techniques:
+
+### Updating Multiple Rows
+I can also update multiple rows at once using a `WHERE` clause that matches multiple conditions. For example, if I want to give a 10% discount to all orders placed in January 2024:
+```
+UPDATE orders
+SET total_amount = total_amount * 0.9 -- 10% discount
+WHERE order_date >= '2024-01-01' AND order_date < '2024-02-01';
+```
+
+### Deleting Multiple Rows
+Smilarly, I can delete multiple rows by specifying a `WHERE` clause that matches multiple conditions. For example, to delete all orders placed by Alice Johnson (customer_id = 1):
+```
+DELETE FROM order
+WHERE customer_id = 1;
+```
+
+Feel free to experiment with these commands in your PostgreSQL playground. Remember, practice is key to mastering SQL!
