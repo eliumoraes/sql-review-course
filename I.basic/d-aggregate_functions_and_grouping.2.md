@@ -1,7 +1,7 @@
-# I.d.2 Grouping Data by Columns (`GROUP BY`)
+# I.d.2 Grouping Data by Columns (`GROUP BY`) and filtering groups (`HAVING`)
 Okay, aggregate functions are cool for summarizing my entire table, but what if I want to break it down further? That's where `GROUP BY` comes in. It lets me group rows based on shared values in one or more columns and then apply aggregate functions to each group separately.
 
-## Basic Syntax
+## `GROUP BY` Basic Syntax
 ```
 SELECT column1, aggregate_function(column2)
 FROM table _name
