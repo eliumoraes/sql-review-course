@@ -22,3 +22,29 @@ GROUP BY customer_id;
 
 #### Interview-Ready Explanation:
 `GROUP BY` allows you to group rows based on a column's unique values. Then, aggregate functions can be applied to each group to get summarized results for each distinct value.
+
+## Having Clause (Filtering Groups)
+Now, what if I want to filter thr groups themselves? That's where `HAVING` comes in. It's like a `WHERE` clause but for groups, not individual rows.
+```
+SELECT column1, column2, aggregate_function(coclumn2)
+FROM table_name
+GROUP BY column1
+HAVING condition;
+```
+
+### Example
+Let's find customers who have placed more than one orders:
+```
+SELECT customer_id, COUNT(*) AS total_orders
+FROM orders
+GROUP BY customer_id
+HAVING COUNT(*) > 1;
+```
+Here, there result returned 0 rows. That means we do not have any costumer that placed more than one order. If you want to see a different result, add more orders and run the query again.
+
+#### Interview-Ready Explanation:
+`HAVING` is used to filter the results of a `GROUP BY` clause based on aggregate function values.
+
+#### Challenges:
+1. What is the difference between `WHERE` and `HAVING`?
+2. Can you give me an example of how to use `GROUP BY` and `HAVING` together to find the departments with an average salary greater than $50,000?
