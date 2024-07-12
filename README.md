@@ -1,6 +1,5 @@
-##  My SQL Bootcamp: Conquering Baires Dev! 
-
-Hello! Welcome to my study repository for the Baires Dev SQL test. Here, you'll follow my journey of reviewing and mastering SQL, from basic concepts to advanced techniques.
+##  My SQL Bootcamp: Conquering SQL coding tests!
+Hello! Welcome to my study repository for mastering SQL. Here, you'll follow my journey of reviewing and mastering SQL, from basic concepts to advanced techniques.
 
 ###  What You'll Find:
 
@@ -44,7 +43,7 @@ a. Introduction to SQL and Relational Databases:
 
 b. Basic Queries (SELECT, FROM, WHERE):
    1. Basic SELECT syntax
-   2. FROM and WHERE clauses for filtering data
+   2. Filtering Data with WHERE clauses
    3. Other operators and filtering techniques (BETWEEN, IN, LIKE, IS NULL)
    4. Sorting and limiting results (ORDER BY, LIMIT, OFFSET)
 
@@ -57,9 +56,7 @@ c. Data Manipulation (INSERT, UPDATE, DELETE):
 
 d. Aggregate Functions and Grouping (GROUP BY, HAVING):
    1. Functions like COUNT, SUM, AVG, MIN, MAX
-   2. Grouping data by columns (GROUP BY)
-   3. Filtering groups (HAVING)
-   4. Practical exercises with aggregate functions and grouping
+   2. Grouping data by columns (GROUP BY) and filtering groups (HAVING)
 
 **II. Intermediate SQL**
 
